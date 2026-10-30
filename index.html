@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun Manjunath | Computer Science Engineering Student & Developer</title>
+  <meta name="description" content="Personal portfolio of Arun Manjunath - Computer Science Engineering Student passionate about software development, Data Structures, Java, Python, C, and modern web technologies.">
+  <meta name="keywords" content="Arun Manjunath, Computer Science Engineer, Portfolio, Software Developer, Java, Python, C, Data Structures, Web Development">
+  <meta name="author" content="Arun Manjunath">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow top-left"></div>
+  <div class="ambient-glow bottom-right"></div>
+  <div class="ambient-glow center-mid"></div>
+
+  <!-- Interactive Starfield / Node Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- =================================================================
+       NAVIGATION BAR
+       ================================================================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#home" class="brand-logo" aria-label="Arun Manjunath Home">
+        <span class="logo-badge">&lt;/&gt;</span>
+        <span class="brand-name">Arun<span>.dev</span></span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="assets/Arun_Manjunath_Resume.pdf" download="Arun_Manjunath_Resume.pdf" class="btn btn-primary btn-sm btn-download-nav">
+          <i class="fa-solid fa-download"></i>
+          <span>Resume</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-nav" class="mobile-nav">
+    <a href="#home" class="mobile-nav-link"><span>Home</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#about" class="mobile-nav-link"><span>About Me</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#skills" class="mobile-nav-link"><span>Skills</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#projects" class="mobile-nav-link"><span>Projects</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#education" class="mobile-nav-link"><span>Education</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#certifications" class="mobile-nav-link"><span>Certifications</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#contact" class="mobile-nav-link"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="assets/Arun_Manjunath_Resume.pdf" download="Arun_Manjunath_Resume.pdf" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
+      <i class="fa-solid fa-download"></i> Download Resume
+    </a>
+  </div>
+
+  <main>
+    <!-- =================================================================
+         1. HOME / HERO SECTION
+         ================================================================= -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Left: Text & Pitch -->
+        <div class="hero-content">
+          <!-- Availability Pill -->
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for SDE Internships &amp; Roles</span>
+          </div>
+
+          <div class="hero-greeting">Hello, I'm</div>
+          <h1 class="hero-name">Arun Manjunath</h1>
+
+          <!-- Dynamic Typing Title -->
+          <div class="hero-title-wrapper">
+            <span>I am a&nbsp;</span>
+            <span class="typed-text"></span>
+            <span class="typed-cursor"></span>
+          </div>
+
+          <!-- Tagline -->
+          <p class="hero-tagline">
+            A passionate Computer Science Engineering student focused on building efficient software architectures, solving intricate algorithmic puzzles, and transforming creative ideas into production-ready web and systems solutions.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="assets/Arun_Manjunath_Resume.pdf" download="Arun_Manjunath_Resume.pdf" class="btn btn-secondary" title="Download Arun's Official Resume">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Resume</span>
+            </a>
+            <button type="button" class="btn btn-outline open-resume-preview" title="Quick in-browser preview & print">
+              <i class="fa-solid fa-eye"></i>
+              <span>Preview</span>
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Row -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="500" data-suffix="+">0</span>
+              <span class="stat-label">DSA Solved</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="8" data-suffix="+">0</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="8.85" data-float="true">0.00</span>
+              <span class="stat-label">B.E. CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="4" data-suffix="+">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Avatar & Tech Glow -->
+        <div class="hero-visual">
+          <div class="avatar-frame">
+            <div class="avatar-glow"></div>
+            <div class="avatar-img-wrap">
+              <img src="assets/avatar.svg" alt="Arun Manjunath - Developer Portrait" loading="eager">
+            </div>
+
+            <!-- Floating Tech Chips -->
+            <div class="floating-chip chip-1">
+              <i class="fa-brands fa-java color-java"></i>
+              <span>Java Core &amp; OOP</span>
+            </div>
+            <div class="floating-chip chip-2">
+              <i class="fa-brands fa-python color-python"></i>
+              <span>Python &amp; ML</span>
+            </div>
+            <div class="floating-chip chip-3">
+              <i class="fa-solid fa-sitemap color-dsa"></i>
+              <span>Data Structures</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         2. ABOUT ME SECTION
+         ================================================================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">&lt;about-me /&gt;</div>
+          <h2 class="section-title">Driven by Curiosity &amp; Code</h2>
+          <p class="section-subtitle">
+            A look into who I am, my philosophy as an engineer, and what fuels my passion for software development.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Highlights -->
+          <div class="about-text-col">
+            <p>
+              I am a dedicated <strong>Computer Science Engineering student</strong> with an insatiable appetite for understanding how complex software systems operate under the hood. From tracing memory allocations and pointers in <strong>C</strong> to designing modular, robust enterprise classes in <strong>Java</strong>, I thrive on writing clean and scalable code.
+            </p>
+            <p>
+              My journey centers around <strong>problem-solving and technology</strong>. I regularly solve algorithmic challenges, explore cutting-edge developer tooling, and build end-to-end full-stack web applications. I believe that true engineering is not just about making software run—it’s about writing maintainable, well-documented, and performant solutions that create a positive user impact.
+            </p>
+
+            <!-- 4 Value Highlights -->
+            <div class="about-features-list">
+              <div class="about-feature-item">
+                <div class="feature-icon-box">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Algorithmic Mindset</h4>
+                  <p>Strong mastery in Data Structures, algorithmic complexity, and time-space optimization.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="feature-icon-box">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Clean Code Advocate</h4>
+                  <p>Dedicated to OOP principles, modular design patterns, and readable architecture.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="feature-icon-box">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Full-Stack Curiosity</h4>
+                  <p>Bridging backend logic, databases, and modern interactive UI/UX experiences.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="feature-icon-box">
+                  <i class="fa-solid fa-users-gear"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Collaborative Team Player</h4>
+                  <p>Active hackathon participant, git enthusiast, and eager continuous learner.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Code Terminal Card -->
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+              </div>
+              <span class="code-title">ArunProfile.java</span>
+              <span style="font-size: 0.75rem; color: #64748b;"><i class="fa-brands fa-java"></i> Java 21</span>
+            </div>
+            <pre class="code-body"><code><span class="keyword">public class</span> <span class="class-name">ArunManjunath</span> <span class="keyword">implements</span> <span class="class-name">SoftwareEngineer</span> {
+    <span class="keyword">private final</span> String name = <span class="string">"Arun Manjunath"</span>;
+    <span class="keyword">private final</span> String degree = <span class="string">"B.E. Computer Science &amp; Engg"</span>;
+    <span class="keyword">private</span> Double cgpa = <span class="number">8.85</span>;
+    <span class="keyword">private</span> String[] passions = {
+        <span class="string">"Data Structures &amp; Algorithms"</span>,
+        <span class="string">"Software Development"</span>,
+        <span class="string">"System Architecture"</span>,
+        <span class="string">"Modern Web Tech"</span>
+    };
+
+    <span class="keyword">public void</span> <span class="function">workPhilosophy</span>() {
+        <span class="keyword">while</span> (<span class="keyword">this</span>.isCurious()) {
+            <span class="function">learn</span>();
+            <span class="function">solveProblems</span>();
+            <span class="function">buildImpactfulApps</span>();
+            <span class="comment">// Always write clean, maintainable code</span>
+        }
+    }
+
+    <span class="keyword">public boolean</span> <span class="function">isReadyForNewRole</span>() {
+        <span class="keyword">return true</span>; <span class="comment">// Ready to contribute!</span>
+    }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. SKILLS SECTION
+         ================================================================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">&lt;technical-skills /&gt;</div>
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-subtitle">
+            Core programming languages, frameworks, data structures, and developer utilities honed through coursework and practical projects.
+          </p>
+        </div>
+
+        <!-- Filter Navigation Tabs -->
+        <div class="skills-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Programming Languages</button>
+          <button class="filter-btn" data-filter="web">Web Technologies</button>
+          <button class="filter-btn" data-filter="core">CS Fundamentals &amp; DSA</button>
+          <button class="filter-btn" data-filter="tools">Tools &amp; Databases</button>
+        </div>
+
+        <!-- Skills Grid Cards -->
+        <div class="skills-grid">
+          <!-- 1. Java (Explicitly required) -->
+          <div class="skill-card" data-category="languages core">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap color-java">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <span class="skill-badge badge-advanced">Advanced</span>
+            </div>
+            <h3 class="skill-name">Java</h3>
+            <p class="skill-desc">
+              Object-Oriented Programming (OOP), Collections Framework, Multithreading, Exception Handling, Streams API, and JDBC database connectivity.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-labels">
+                <span>Proficiency</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. C (Explicitly required) -->
+          <div class="skill-card" data-category="languages core">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap color-c">
+                <i class="fa-solid fa-c"></i>
+              </div>
+              <span class="skill-badge badge-proficient">Proficient</span>
+            </div>
+            <h3 class="skill-name">C</h3>
+            <p class="skill-desc">
+              Pointers, Dynamic Memory Management (malloc/free), Structs, File I/O, Bitwise Operations, and low-level socket system programming.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-labels">
+                <span>Proficiency</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Python (Explicitly required) -->
+          <div class="skill-card" data-category="languages tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap color-python">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="skill-badge badge-advanced">Advanced</span>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">
+              Data manipulation, algorithmic problem solving, Flask/FastAPI backends, automation scripts, Pandas, and Matplotlib data visualization.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-labels">
+                <span>Proficiency</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. HTML (Explicitly required) -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap color-html">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span class="skill-badge badge-advanced">Advanced</span>
+            </div>
+            <h3 class="skill-name">HTML</h3>
+            <p class="skill-desc">
+              HTML5 semantic architecture, accessible web standards (WAI-ARIA), DOM hierarchy, responsive canvas graphics, and SEO fundamentals.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-labels">
+                <span>Proficiency</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. CSS (Explicitly required) -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap color-css">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <span class="skill-badge badge-advanced">Advanced</span>
+            </div>
+            <h3 class="skill-name">CSS</h3>
+            <p class="skill-desc">
+              CSS3 Flexbox, CSS Grid layouts, fluid animations, media queries, CSS variables, Glassmorphism, and responsive cross-browser design.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-labels">
+                <span>Proficiency</span>
+                <span>92%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. JavaScript (Explicitly required) -->
+          <div class="skill-card" data-category="languages web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap color-js">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <span class="skill-badge badge-advanced">Advanced</span>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">
+              Modern ES6+ syntax, asynchronous programming (Async/Await, Promises), Fetch API, DOM manipulation, closures, and event loop mechanics.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-labels">
+                <span>Proficiency</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Data Structures (Explicitly required) -->
+          <div class="skill-card" data-category="core">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap color-dsa">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <span class="skill-badge badge-core">Core Specialization</span>
+            </div>
+            <h3 class="skill-name">Data Structures</h3>
+            <p class="skill-desc">
+              Arrays, Linked Lists, Stacks, Queues, Binary Search Trees, Heaps, Hash Tables, Graphs, and Dynamic Programming algorithms.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-labels">
+                <span>Proficiency</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Database & SQL -->
+          <div class="skill-card" data-category="core tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap color-db">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <span class="skill-badge badge-proficient">Proficient</span>
+            </div>
+            <h3 class="skill-name">DBMS &amp; SQL</h3>
+            <p class="skill-desc">
+              Relational schema normalization, complex SQL joins, indexing, ACID transactions, MySQL, and persistent SQLite integration.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-labels">
+                <span>Proficiency</span>
+                <span>84%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 84%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Git & Version Control -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #f05032;">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <span class="skill-badge badge-advanced">Proficient</span>
+            </div>
+            <h3 class="skill-name">Git &amp; GitHub</h3>
+            <p class="skill-desc">
+              Version control workflows, branching, rebasing, pull requests, resolving merge conflicts, and collaborative team repositories.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-labels">
+                <span>Proficiency</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. PROJECTS SECTION
+         ================================================================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">&lt;portfolio-showcase /&gt;</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            A curated showcase of academic systems, algorithmic visualizers, and full-stack software built with clean code principles.
+          </p>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="skills-filter-nav project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+          <button class="filter-btn" data-filter="web">Web &amp; Full Stack</button>
+          <button class="filter-btn" data-filter="java">Java &amp; Systems</button>
+          <button class="filter-btn" data-filter="python">Python &amp; Data</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Algoverse -->
+          <article class="project-card" data-category="web core">
+            <div class="project-banner">
+              <span class="project-category-badge">Web &amp; DSA</span>
+              <div class="project-mockup-screen">
+                <div class="mockup-bar">
+                  <span class="code-dot red"></span>
+                  <span class="code-dot yellow"></span>
+                  <span class="code-dot green"></span>
+                  <span style="font-size: 0.7rem; color: #64748b; margin-left: 0.5rem;">algoverse.app</span>
+                </div>
+                <div class="mockup-content">
+                  &gt; QuickSort(arr, 0, n-1) [COMPLETED]<br>
+                  &gt; Dijkstra(grid, startNode, endNode)<br>
+                  <span style="color: #34d399;">✔ Shortest path verified: 18 steps</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Algoverse - Algorithm Visualizer</h3>
+              <p class="project-desc">
+                An interactive web suite that brings complex sorting and graph pathfinding algorithms to life through dynamic step-by-step canvas animations.
+              </p>
+              <ul class="project-features">
+                <li>Visualizes QuickSort, MergeSort, and HeapSort arrays.</li>
+                <li>Interactive 2D obstacle grid with Dijkstra &amp; A* search.</li>
+                <li>Variable animation speed controls and playback throttle.</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Data Structures</span>
+              </div>
+              <div class="project-actions">
+                <div class="project-links">
+                  <a href="https://github.com/arunmanjunath" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a href="#" class="project-btn open-project-modal" data-project="algoverse">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: CampusConnect -->
+          <article class="project-card" data-category="java">
+            <div class="project-banner">
+              <span class="project-category-badge">Java &amp; MySQL</span>
+              <div class="project-mockup-screen">
+                <div class="mockup-bar">
+                  <span class="code-dot red"></span>
+                  <span class="code-dot yellow"></span>
+                  <span class="code-dot green"></span>
+                  <span style="font-size: 0.7rem; color: #64748b; margin-left: 0.5rem;">campus_portal.java</span>
+                </div>
+                <div class="mockup-content">
+                  &gt; Connection conn = DB.getConnection();<br>
+                  &gt; PreparedStatement ps = conn.prepareStatement(...);<br>
+                  <span style="color: #38bdf8;">✔ Authenticated: Student ID #22CS089</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CampusConnect - Student Portal</h3>
+              <p class="project-desc">
+                An academic management platform engineered in Java for university faculty and students, featuring attendance tracking and automated GPA calculation.
+              </p>
+              <ul class="project-features">
+                <li>Role-based access control (Admin, Faculty, Student).</li>
+                <li>Normalized MySQL schema with parameterized queries.</li>
+                <li>Automated grade computation and transcript generation.</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java (OOP)</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">MVC Pattern</span>
+              </div>
+              <div class="project-actions">
+                <div class="project-links">
+                  <a href="https://github.com/arunmanjunath" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a href="#" class="project-btn open-project-modal" data-project="campusconnect">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: CodePulse -->
+          <article class="project-card" data-category="web python">
+            <div class="project-banner">
+              <span class="project-category-badge">Python &amp; Web</span>
+              <div class="project-mockup-screen">
+                <div class="mockup-bar">
+                  <span class="code-dot red"></span>
+                  <span class="code-dot yellow"></span>
+                  <span class="code-dot green"></span>
+                  <span style="font-size: 0.7rem; color: #64748b; margin-left: 0.5rem;">codepulse.io</span>
+                </div>
+                <div class="mockup-content">
+                  &gt; Sprint #4: 12 / 14 Tasks Completed<br>
+                  &gt; Pomodoro: 25m Focus Block Active<br>
+                  <span style="color: #a855f7;">✔ Productivity Score: 94.2%</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CodePulse - Developer Task Suite</h3>
+              <p class="project-desc">
+                A sleek task and productivity dashboard tailored for developers, combining Kanban sprint boards, Pomodoro timer blocks, and analytics.
+              </p>
+              <ul class="project-features">
+                <li>RESTful API back-end with full CRUD functionality.</li>
+                <li>Interactive drag-and-drop Kanban workflow.</li>
+                <li>Persistent storage and animated heatmaps.</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <div class="project-links">
+                  <a href="https://github.com/arunmanjunath" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a href="#" class="project-btn open-project-modal" data-project="codepulse">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: SmartExpense -->
+          <article class="project-card" data-category="python">
+            <div class="project-banner">
+              <span class="project-category-badge">Python &amp; Data</span>
+              <div class="project-mockup-screen">
+                <div class="mockup-bar">
+                  <span class="code-dot red"></span>
+                  <span class="code-dot yellow"></span>
+                  <span class="code-dot green"></span>
+                  <span style="font-size: 0.7rem; color: #64748b; margin-left: 0.5rem;">analyzer.py</span>
+                </div>
+                <div class="mockup-content">
+                  &gt; df = pd.read_csv('bank_statement.csv')<br>
+                  &gt; df.groupby('Category')['Amount'].sum()<br>
+                  <span style="color: #10b981;">✔ Pie chart &amp; budget trend saved</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SmartExpense - Budget Analyzer</h3>
+              <p class="project-desc">
+                A personal finance analytics tool in Python that processes bank transaction CSVs, auto-categorizes spending, and generates visual charts.
+              </p>
+              <ul class="project-features">
+                <li>Automated category classification via regex rules.</li>
+                <li>Visual expense breakdown charts with Matplotlib.</li>
+                <li>Custom monthly budget limits and alert flags.</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Data Analysis</span>
+              </div>
+              <div class="project-actions">
+                <div class="project-links">
+                  <a href="https://github.com/arunmanjunath" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a href="#" class="project-btn open-project-modal" data-project="smartexpense">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Packet Sniffer (C) -->
+          <article class="project-card" data-category="java">
+            <div class="project-banner">
+              <span class="project-category-badge">C &amp; Systems</span>
+              <div class="project-mockup-screen">
+                <div class="mockup-bar">
+                  <span class="code-dot red"></span>
+                  <span class="code-dot yellow"></span>
+                  <span class="code-dot green"></span>
+                  <span style="font-size: 0.7rem; color: #64748b; margin-left: 0.5rem;">sniffer.c (Linux)</span>
+                </div>
+                <div class="mockup-content">
+                  &gt; int sock = socket(AF_PACKET, SOCK_RAW, ...);<br>
+                  &gt; [ETH] Src: 00:1a:2b:3c:4d:5e -&gt; Dst: ff:ff:ff:ff<br>
+                  <span style="color: #f59e0b;">&gt; [TCP] 192.168.1.10:443 -&gt; SYN/ACK [Len: 64]</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Network Packet Sniffer &amp; Analyzer</h3>
+              <p class="project-desc">
+                A systems-level packet inspection utility written in C using raw sockets to capture and parse network traffic across network interfaces.
+              </p>
+              <ul class="project-features">
+                <li>Raw socket capture under Linux POSIX environment.</li>
+                <li>Header dissection: Ethernet, IPv4, TCP, and UDP frames.</li>
+                <li>Bandwidth throughput monitoring and packet stats.</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">C Programming</span>
+                <span class="tech-tag">Raw Sockets</span>
+                <span class="tech-tag">TCP/IP</span>
+                <span class="tech-tag">Linux</span>
+              </div>
+              <div class="project-actions">
+                <div class="project-links">
+                  <a href="https://github.com/arunmanjunath" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a href="#" class="project-btn open-project-modal" data-project="packetsniffer">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: DevPortfolio -->
+          <article class="project-card" data-category="web">
+            <div class="project-banner">
+              <span class="project-category-badge">Web &amp; UI/UX</span>
+              <div class="project-mockup-screen">
+                <div class="mockup-bar">
+                  <span class="code-dot red"></span>
+                  <span class="code-dot yellow"></span>
+                  <span class="code-dot green"></span>
+                  <span style="font-size: 0.7rem; color: #64748b; margin-left: 0.5rem;">arun-portfolio.dev</span>
+                </div>
+                <div class="mockup-content">
+                  &gt; Lighthouse Score: 100 Performance<br>
+                  &gt; Glassmorphism &amp; Dark Theme Engine<br>
+                  <span style="color: #38bdf8;">✔ Interactive Resume &amp; Canvas loaded</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Arun Manjunath - Portfolio Space</h3>
+              <p class="project-desc">
+                A fast, responsive developer portfolio engineered with modern semantic HTML5, cyber-minimal CSS3 glassmorphism, and vanilla ES6+ interactivity.
+              </p>
+              <ul class="project-features">
+                <li>Zero dependencies; pure vanilla HTML5, CSS3, &amp; JS.</li>
+                <li>Integrated PDF generation &amp; printable resume view.</li>
+                <li>Interactive ambient particle canvas &amp; micro-effects.</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">UI/UX</span>
+              </div>
+              <div class="project-actions">
+                <div class="project-links">
+                  <a href="https://github.com/arunmanjunath" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a href="#" class="project-btn open-project-modal" data-project="devportfolio">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. EDUCATION SECTION
+         ================================================================= -->
+    <section id="education" class="section">
+      <div class="container education-container">
+        <div class="section-header">
+          <div class="section-tag">&lt;academic-journey /&gt;</div>
+          <h2 class="section-title">Education &amp; Qualifications</h2>
+          <p class="section-subtitle">
+            Formal computer science engineering foundation, academic performance, and core theoretical fundamentals.
+          </p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- Timeline Node 1: Engineering Degree -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Bachelor of Engineering (B.E.) in Computer Science &amp; Engineering</h3>
+                  <div class="timeline-institution">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Department of Computer Science &amp; Engineering, VTU Affiliated College</span>
+                  </div>
+                </div>
+                <span class="timeline-badge-duration">2022 – 2026 (Expected)</span>
+              </div>
+
+              <div class="timeline-score">
+                <i class="fa-solid fa-star"></i>
+                <span>Current CGPA: 8.85 / 10.0 (First Class with Distinction)</span>
+              </div>
+
+              <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0.8rem;">
+                Pursuing comprehensive undergraduate training covering foundational computing theories, software design patterns, algorithm optimization, and practical laboratory implementations.
+              </p>
+
+              <div style="font-weight: 600; font-size: 0.85rem; color: #ffffff; margin-top: 1rem;">
+                Core Relevant Coursework:
+              </div>
+              <div class="coursework-grid">
+                <span class="course-chip">Data Structures &amp; Algorithms</span>
+                <span class="course-chip">Design &amp; Analysis of Algorithms (DAA)</span>
+                <span class="course-chip">Object-Oriented Programming (Java)</span>
+                <span class="course-chip">Database Management Systems (DBMS)</span>
+                <span class="course-chip">Operating Systems</span>
+                <span class="course-chip">Computer Networks</span>
+                <span class="course-chip">Software Engineering</span>
+                <span class="course-chip">Computer Organization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Node 2: Pre-University Education -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Pre-University Course (PCMC - Science Stream)</h3>
+                  <div class="timeline-institution">
+                    <i class="fa-solid fa-school"></i>
+                    <span>Department of Pre-University Education, Karnataka</span>
+                  </div>
+                </div>
+                <span class="timeline-badge-duration">2020 – 2022</span>
+              </div>
+
+              <div class="timeline-score">
+                <i class="fa-solid fa-award"></i>
+                <span>Overall Percentage: 94.0% (Distinction)</span>
+              </div>
+
+              <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0.8rem;">
+                Built a solid mathematical foundation in Calculus, Linear Algebra, and Discrete Logic alongside introductory Computer Science fundamentals (Boolean Algebra, C/C++ programming).
+              </p>
+
+              <div class="coursework-grid">
+                <span class="course-chip">Physics</span>
+                <span class="course-chip">Chemistry</span>
+                <span class="course-chip">Mathematics</span>
+                <span class="course-chip">Computer Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. CERTIFICATIONS & ACHIEVEMENTS SECTION
+         ================================================================= -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">&lt;credentials-awards /&gt;</div>
+          <h2 class="section-title">Certifications &amp; Achievements</h2>
+          <p class="section-subtitle">
+            Industry credentials, competitive programming achievements, and recognized hackathon milestones.
+          </p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <div class="cert-icon">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <span class="cert-issuer-badge">Coursera / Oracle</span>
+            </div>
+            <h3 class="cert-title">Java Programming &amp; OOP Masterclass</h3>
+            <div class="cert-issuer">Oracle Certified Partner Course</div>
+            <p class="cert-desc">
+              Comprehensive specialization in Java 17+, Object-Oriented Principles, polymorphism, inheritance, Collections framework, and multi-threaded programming.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified Credential</span>
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">2024</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <div class="cert-icon" style="background: rgba(56, 189, 248, 0.12); color: var(--cyan); border-color: rgba(56, 189, 248, 0.3);">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <span class="cert-issuer-badge">GeeksforGeeks</span>
+            </div>
+            <h3 class="cert-title">Data Structures &amp; Algorithms in Java/C</h3>
+            <div class="cert-issuer">GeeksforGeeks Self-Paced</div>
+            <p class="cert-desc">
+              Extensive mastery of problem solving across recursion, sorting algorithms, binary search trees, graph traversals, and dynamic programming paradigms.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-status"><i class="fa-solid fa-circle-check"></i> 500+ Problems Solved</span>
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">2024</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <div class="cert-icon" style="background: rgba(16, 185, 129, 0.12); color: var(--emerald); border-color: rgba(16, 185, 129, 0.3);">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="cert-issuer-badge">Univ. of Michigan</span>
+            </div>
+            <h3 class="cert-title">Python for Everybody &amp; Data Structures</h3>
+            <div class="cert-issuer">University of Michigan (Coursera)</div>
+            <p class="cert-desc">
+              Core Python programming, data scraping, regex parsing, JSON data access, and SQL database manipulation with Python.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified Credential</span>
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">2023</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <div class="cert-icon" style="background: rgba(244, 63, 94, 0.12); color: var(--rose); border-color: rgba(244, 63, 94, 0.3);">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span class="cert-issuer-badge">freeCodeCamp</span>
+            </div>
+            <h3 class="cert-title">Responsive Web Design &amp; JavaScript</h3>
+            <div class="cert-issuer">freeCodeCamp Certification</div>
+            <p class="cert-desc">
+              300+ hours of hands-on curriculum in modern semantic HTML5, CSS Flexbox/Grid, and JavaScript ES6+ algorithms.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified Credential</span>
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">2023</span>
+            </div>
+          </div>
+
+          <!-- Cert 5: Hackathon -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <div class="cert-icon" style="background: rgba(245, 158, 11, 0.12); color: var(--amber); border-color: rgba(245, 158, 11, 0.3);">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <span class="cert-issuer-badge">Hackathon Finalist</span>
+            </div>
+            <h3 class="cert-title">CivicTech Innovation Challenge</h3>
+            <div class="cert-issuer">Inter-Collegiate Hackathon 2024</div>
+            <p class="cert-desc">
+              Ranked among top 5 finalists out of 60+ teams for creating an automated civic issue reporting and triage system.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-status" style="color: var(--amber);"><i class="fa-solid fa-medal"></i> Top Finalist</span>
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">2024</span>
+            </div>
+          </div>
+
+          <!-- Cert 6: LeetCode Milestone -->
+          <div class="cert-card">
+            <div class="cert-top">
+              <div class="cert-icon" style="background: rgba(99, 102, 241, 0.12); color: var(--indigo); border-color: rgba(99, 102, 241, 0.3);">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <span class="cert-issuer-badge">Competitive Coding</span>
+            </div>
+            <h3 class="cert-title">LeetCode &amp; HackerRank Milestones</h3>
+            <div class="cert-issuer">Algorithmic Problem Solving</div>
+            <p class="cert-desc">
+              Solved 500+ algorithmic questions with a 50+ day consistency streak; 5-Star Python and Problem Solving Badges on HackerRank.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-status"><i class="fa-solid fa-award"></i> Active Solved</span>
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">Ongoing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7. CONTACT SECTION
+         ================================================================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">&lt;get-in-touch /&gt;</div>
+          <h2 class="section-title">Let's Connect &amp; Build</h2>
+          <p class="section-subtitle">
+            Whether you have an internship opportunity, a project to collaborate on, or just want to chat about tech, feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards & Socials -->
+          <div class="contact-info-col">
+            <!-- Email Card -->
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Address</h4>
+                <a href="mailto:arunmanjunath.cse@gmail.com" class="contact-value">arunmanjunath.cse@gmail.com</a>
+              </div>
+              <button id="copy-email-btn" class="copy-btn" title="Copy email address">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <a href="https://linkedin.com/in/arun-manjunath" target="_blank" rel="noopener noreferrer" class="contact-info-card">
+              <div class="contact-icon-box" style="color: #0a66c2; background: rgba(10, 102, 194, 0.12); border-color: rgba(10, 102, 194, 0.3);">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-details">
+                <h4>LinkedIn Profile</h4>
+                <div class="contact-value">linkedin.com/in/arun-manjunath</div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: auto; color: var(--text-muted);"></i>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/arunmanjunath" target="_blank" rel="noopener noreferrer" class="contact-info-card">
+              <div class="contact-icon-box" style="color: #ffffff; background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2);">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <h4>GitHub Profile</h4>
+                <div class="contact-value">github.com/arunmanjunath</div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: auto; color: var(--text-muted);"></i>
+            </a>
+
+            <!-- Location Card -->
+            <div class="contact-info-card">
+              <div class="contact-icon-box" style="color: #ef4444; background: rgba(239, 68, 68, 0.12); border-color: rgba(239, 68, 68, 0.3);">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Current Location</h4>
+                <div class="contact-value">Bangalore, Karnataka, India</div>
+              </div>
+            </div>
+
+            <!-- Social Links Quick Pill Bar -->
+            <div class="social-links-bar">
+              <a href="https://linkedin.com/in/arun-manjunath" target="_blank" rel="noopener noreferrer" class="social-pill-btn">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/arunmanjunath" target="_blank" rel="noopener noreferrer" class="social-pill-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="assets/Arun_Manjunath_Resume.pdf" download="Arun_Manjunath_Resume.pdf" class="social-pill-btn">
+                <i class="fa-solid fa-download"></i> Resume PDF
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-wrap">
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.6rem; color: #ffffff;">Send a Direct Message</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.8rem;">
+              Fill out the form below and I will get back to you within 24 hours.
+            </p>
+
+            <form id="portfolio-contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name" class="form-label">Your Full Name *</label>
+                  <input type="text" id="sender-name" class="form-control" placeholder="e.g. John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="sender-email" class="form-label">Your Email Address *</label>
+                  <input type="email" id="sender-email" class="form-control" placeholder="e.g. john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject" class="form-label">Subject *</label>
+                <input type="text" id="sender-subject" class="form-control" placeholder="e.g. Internship Opportunity / Project Collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Message *</label>
+                <textarea id="sender-message" class="form-control" rows="4" placeholder="Hello Arun, I came across your portfolio and would love to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary btn-glow" style="width: 100%; padding: 0.95rem;">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+       ================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="logo-badge">&lt;/&gt;</span>
+            <span class="brand-name">Arun<span>.dev</span></span>
+          </div>
+          <p>
+            Computer Science Engineering Student dedicated to building clean, efficient, and reliable software. Open for software engineering internships and junior developer roles.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#projects">Featured Projects</a></li>
+            <li><a href="#education">Education Details</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-col">
+          <h4>Connect &amp; Docs</h4>
+          <ul class="footer-links">
+            <li><a href="https://linkedin.com/in/arun-manjunath" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/arunmanjunath" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="assets/Arun_Manjunath_Resume.pdf" download="Arun_Manjunath_Resume.pdf"><i class="fa-solid fa-download"></i> Download Resume PDF</a></li>
+            <li><a href="resume.html" target="_blank"><i class="fa-solid fa-file-lines"></i> Printable Resume View</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong>Arun Manjunath</strong>. Crafted with clean code &amp; modern web standards.
+        </div>
+        <a href="#home" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       MODAL 1: PROJECT DETAILS MODAL
+       ================================================================= -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span id="modal-project-category" class="section-tag" style="margin-bottom: 0.3rem; font-size: 0.75rem;">Category</span>
+          <h3 id="modal-project-title" class="modal-title">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4 style="font-size: 0.95rem; margin-bottom: 0.6rem; color: #ffffff;">Tech Stack</h4>
+        <div id="modal-project-tech" class="project-tech-tags" style="margin-bottom: 1.4rem;"></div>
+
+        <h4 style="font-size: 0.95rem; margin-bottom: 0.6rem; color: #ffffff;">Overview</h4>
+        <p id="modal-project-overview" style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.4rem;"></p>
+
+        <h4 style="font-size: 0.95rem; margin-bottom: 0.6rem; color: #ffffff;">Key Highlights &amp; Architecture</h4>
+        <ul id="modal-project-highlights" class="project-features" style="padding-left: 0; border: none; list-style: none;"></ul>
+      </div>
+      <div class="modal-footer">
+        <a id="modal-project-github" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <i class="fa-brands fa-github"></i> View GitHub Repository
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       MODAL 2: IN-BROWSER RESUME PREVIEW MODAL
+       ================================================================= -->
+  <div id="resume-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 850px; max-height: 94vh;">
+      <div class="modal-header">
+        <div>
+          <span class="section-tag" style="margin-bottom: 0.3rem; font-size: 0.75rem;">Curriculum Vitae</span>
+          <h3 class="modal-title">Arun Manjunath — Resume Preview</h3>
+        </div>
+        <button class="modal-close-btn resume-modal-close" aria-label="Close resume modal">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 1.2rem; background: #07090e;">
+        <iframe src="resume.html" style="width: 100%; height: 65vh; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); background: #ffffff;" title="Resume Preview Sheet"></iframe>
+      </div>
+      <div class="modal-footer" style="justify-content: space-between;">
+        <a href="resume.html" target="_blank" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
+        </a>
+        <div style="display: flex; gap: 0.6rem;">
+          <a href="assets/Arun_Manjunath_Resume.pdf" download="Arun_Manjunath_Resume.pdf" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Bundle -->
+  <script src="js/main.js"></script>
+</body>
+</html>

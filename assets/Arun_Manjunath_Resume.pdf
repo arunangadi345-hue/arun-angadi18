@@ -1,0 +1,239 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 6779 >>
+stream
+q
+0.050 0.080 0.150 rg
+0.0 730.0 595.0 112.0 re f
+0.220 0.740 0.970 rg
+0.0 726.0 200.0 4.0 re f
+0.390 0.400 0.950 rg
+200.0 726.0 200.0 4.0 re f
+0.660 0.330 0.970 rg
+400.0 726.0 195.0 4.0 re f
+/F2 22 Tf
+1.000 1.000 1.000 rg
+BT 40.0 795.0 Td (ARUN MANJUNATH) Tj ET
+/F2 11 Tf
+0.220 0.740 0.970 rg
+BT 40.0 775.0 Td (Computer Science Engineering Student | Software Developer) Tj ET
+/F1 8.5 Tf
+0.800 0.850 0.920 rg
+BT 40.0 755.0 Td (Bangalore, India  |  arunmanjunath.cse@gmail.com  |  linkedin.com/in/arun-manjunath  |  github.com/arunmanjunath) Tj ET
+Q
+q
+0.060 0.090 0.180 rg
+40.0 703.0 515.0 20.0 re f
+0.220 0.740 0.970 rg
+40.0 703.0 4.0 20.0 re f
+/F2 10 Tf
+0.950 0.950 1.000 rg
+BT 50.0 708.0 Td (PROFESSIONAL SUMMARY) Tj ET
+Q
+/F1 9 Tf
+0.200 0.220 0.280 rg
+BT 45.0 682.0 Td (Dedicated and motivated Computer Science Engineering student with a solid grounding in Data Structures,) Tj ET
+/F1 9 Tf
+0.200 0.220 0.280 rg
+BT 45.0 669.0 Td (Algorithms, Object-Oriented Programming, and Full-Stack Web Development. Passionate about engineering clean,) Tj ET
+/F1 9 Tf
+0.200 0.220 0.280 rg
+BT 45.0 656.0 Td (efficient software solutions using Java, Python, and C. Proven track record in competitive problem-solving and building) Tj ET
+/F1 9 Tf
+0.200 0.220 0.280 rg
+BT 45.0 643.0 Td (impactful academic and personal projects. Actively seeking software engineering internship and entry-level roles.) Tj ET
+q
+0.060 0.090 0.180 rg
+40.0 620.0 515.0 20.0 re f
+0.220 0.740 0.970 rg
+40.0 620.0 4.0 20.0 re f
+/F2 10 Tf
+0.950 0.950 1.000 rg
+BT 50.0 625.0 Td (TECHNICAL SKILLS) Tj ET
+Q
+/F2 9 Tf
+0.100 0.150 0.250 rg
+BT 45.0 599.0 Td (Programming Languages:) Tj ET
+/F1 9 Tf
+0.250 0.280 0.350 rg
+BT 190.0 599.0 Td (Java \(Core & OOP, Collections\), C, Python, JavaScript \(ES6+\)) Tj ET
+/F2 9 Tf
+0.100 0.150 0.250 rg
+BT 45.0 585.0 Td (Web Technologies:) Tj ET
+/F1 9 Tf
+0.250 0.280 0.350 rg
+BT 190.0 585.0 Td (HTML5, CSS3 \(Flexbox/Grid, Responsive Design\), Vanilla JS, Modern REST APIs) Tj ET
+/F2 9 Tf
+0.100 0.150 0.250 rg
+BT 45.0 571.0 Td (Core Computer Science:) Tj ET
+/F1 9 Tf
+0.250 0.280 0.350 rg
+BT 190.0 571.0 Td (Data Structures & Algorithms, Object-Oriented Design, DBMS & SQL, OS, Computer Networks) Tj ET
+/F2 9 Tf
+0.100 0.150 0.250 rg
+BT 45.0 557.0 Td (Tools & Platforms:) Tj ET
+/F1 9 Tf
+0.250 0.280 0.350 rg
+BT 190.0 557.0 Td (Git, GitHub, VS Code, Linux/Bash, MySQL, Postman) Tj ET
+q
+0.060 0.090 0.180 rg
+40.0 533.0 515.0 20.0 re f
+0.220 0.740 0.970 rg
+40.0 533.0 4.0 20.0 re f
+/F2 10 Tf
+0.950 0.950 1.000 rg
+BT 50.0 538.0 Td (FEATURED PROJECTS) Tj ET
+Q
+/F2 9.5 Tf
+0.080 0.120 0.220 rg
+BT 45.0 512.0 Td (Algoverse - Algorithm & Pathfinding Visualizer) Tj ET
+/F3 7.5 Tf
+0.250 0.350 0.550 rg
+BT 360.0 512.0 Td ([JavaScript, HTML5 Canvas, CSS3, Data Structures]) Tj ET
+/F1 8.5 Tf
+0.220 0.250 0.320 rg
+BT 52.0 500.0 Td (-  Built an interactive web tool visualizing sorting algorithms \(QuickSort, MergeSort\) and pathfinding \(Dijkstra, A*\).) Tj ET
+/F1 8.5 Tf
+0.220 0.250 0.320 rg
+BT 52.0 489.0 Td (-  Implemented step-by-step state animations, variable speed playback, and custom maze generators.) Tj ET
+/F2 9.5 Tf
+0.080 0.120 0.220 rg
+BT 45.0 475.0 Td (CampusConnect - Academic Portal & Student Management System) Tj ET
+/F3 7.5 Tf
+0.250 0.350 0.550 rg
+BT 360.0 475.0 Td ([Java, JDBC, MySQL, HTML/CSS, MVC Architecture]) Tj ET
+/F1 8.5 Tf
+0.220 0.250 0.320 rg
+BT 52.0 463.0 Td (-  Engineered a multi-role student management portal supporting attendance tracking, grade analytics, and courses.) Tj ET
+/F1 8.5 Tf
+0.220 0.250 0.320 rg
+BT 52.0 452.0 Td (-  Implemented secure authentication, relational database normalization, and optimized SQL queries.) Tj ET
+/F2 9.5 Tf
+0.080 0.120 0.220 rg
+BT 45.0 438.0 Td (CodePulse - Developer Task & Productivity Suite) Tj ET
+/F3 7.5 Tf
+0.250 0.350 0.550 rg
+BT 360.0 438.0 Td ([Python, Flask, SQLite, JavaScript, Responsive UI]) Tj ET
+/F1 8.5 Tf
+0.220 0.250 0.320 rg
+BT 52.0 426.0 Td (-  Created an intuitive task management dashboard with Kanban workflows, Pomodoro timers, and progress analytics.) Tj ET
+/F1 8.5 Tf
+0.220 0.250 0.320 rg
+BT 52.0 415.0 Td (-  Designed RESTful endpoints with full CRUD capabilities and persistent local storage synchronization.) Tj ET
+/F2 9.5 Tf
+0.080 0.120 0.220 rg
+BT 45.0 401.0 Td (Network Packet Sniffer & Traffic Inspector) Tj ET
+/F3 7.5 Tf
+0.250 0.350 0.550 rg
+BT 360.0 401.0 Td ([C, Linux Socket Programming, TCP/IP Protocols]) Tj ET
+/F1 8.5 Tf
+0.220 0.250 0.320 rg
+BT 52.0 389.0 Td (-  Developed a low-level packet capture application using raw sockets in C to decode ethernet, IP, and TCP headers.) Tj ET
+/F1 8.5 Tf
+0.220 0.250 0.320 rg
+BT 52.0 378.0 Td (-  Provided real-time terminal diagnostics and traffic metrics calculation for local network interfaces.) Tj ET
+q
+0.060 0.090 0.180 rg
+40.0 358.0 515.0 20.0 re f
+0.220 0.740 0.970 rg
+40.0 358.0 4.0 20.0 re f
+/F2 10 Tf
+0.950 0.950 1.000 rg
+BT 50.0 363.0 Td (EDUCATION) Tj ET
+Q
+/F2 9.5 Tf
+0.080 0.120 0.220 rg
+BT 45.0 337.0 Td (Bachelor of Engineering \(B.E.\) in Computer Science & Engineering) Tj ET
+/F2 9 Tf
+0.200 0.250 0.350 rg
+BT 475.0 337.0 Td (2022 - 2026) Tj ET
+/F1 8.5 Tf
+0.250 0.300 0.400 rg
+BT 45.0 325.0 Td (Visvesvaraya Technological University \(VTU\) / Engineering College) Tj ET
+/F2 8.5 Tf
+0.050 0.500 0.200 rg
+BT 465.0 325.0 Td (CGPA: 8.85 / 10) Tj ET
+/F1 8 Tf
+0.300 0.350 0.400 rg
+BT 52.0 314.0 Td (-  Coursework: Data Structures & Algorithms, OOP with Java, DBMS, Operating Systems, Computer Networks.) Tj ET
+/F2 9.5 Tf
+0.080 0.120 0.220 rg
+BT 45.0 299.0 Td (Pre-University Course \(PCMC\) - Science Stream) Tj ET
+/F2 9 Tf
+0.200 0.250 0.350 rg
+BT 475.0 299.0 Td (2020 - 2022) Tj ET
+/F1 8.5 Tf
+0.250 0.300 0.400 rg
+BT 45.0 287.0 Td (Department of Pre-University Education, Karnataka) Tj ET
+/F2 8.5 Tf
+0.050 0.500 0.200 rg
+BT 475.0 287.0 Td (Score: 94%) Tj ET
+q
+0.060 0.090 0.180 rg
+40.0 269.0 515.0 20.0 re f
+0.220 0.740 0.970 rg
+40.0 269.0 4.0 20.0 re f
+/F2 10 Tf
+0.950 0.950 1.000 rg
+BT 50.0 274.0 Td (CERTIFICATIONS & KEY ACHIEVEMENTS) Tj ET
+Q
+/F2 8.5 Tf
+0.150 0.200 0.280 rg
+BT 52.0 248.0 Td (-  Java Programming & Object-Oriented Design Masterclass) Tj ET
+/F3 8 Tf
+0.350 0.400 0.500 rg
+BT 420.0 248.0 Td (-- Coursera / Oracle Verified) Tj ET
+/F2 8.5 Tf
+0.150 0.200 0.280 rg
+BT 52.0 236.0 Td (-  Data Structures & Algorithms Mastery in Java & C) Tj ET
+/F3 8 Tf
+0.350 0.400 0.500 rg
+BT 420.0 236.0 Td (-- GeeksforGeeks / LeetCode \(500+ Solved\)) Tj ET
+/F2 8.5 Tf
+0.150 0.200 0.280 rg
+BT 52.0 224.0 Td (-  Python for Data Structures & Algorithms) Tj ET
+/F3 8 Tf
+0.350 0.400 0.500 rg
+BT 420.0 224.0 Td (-- University of Michigan Online) Tj ET
+/F2 8.5 Tf
+0.150 0.200 0.280 rg
+BT 52.0 212.0 Td (-  Hackathon Finalist - CivicTech Innovation Challenge) Tj ET
+/F3 8 Tf
+0.350 0.400 0.500 rg
+BT 420.0 212.0 Td (-- Inter-Collegiate Hackathon 2024) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000267 00000 n 
+0000007098 00000 n 
+0000007168 00000 n 
+0000007243 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+7321
+%%EOF
