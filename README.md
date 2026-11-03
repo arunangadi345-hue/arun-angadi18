@@ -1,4 +1,4 @@
-# Arun Manjunath — Modern Developer Portfolio
+# Arun Angadi  — Modern Developer Portfolio
 
 A modern, high-performance, and responsive personal portfolio website crafted for **Arun Manjunath**, Computer Science Engineering Student and Aspiring Software Engineer.
 
@@ -14,8 +14,8 @@ A modern, high-performance, and responsive personal portfolio website crafted fo
   2. **About Me**: Narrative bio, 4 core engineering principles, and an interactive `ArunProfile.java` terminal code block.
   3. **Skills**: Explicitly highlights **Java, C, Python, HTML, CSS, JavaScript, and Data Structures**, with interactive category filter tabs and proficiency progress bars.
   4. **Projects**: 6 featured academic and personal projects with architecture highlights, tech tags, GitHub links, and an interactive **Quick View Modal**.
-  5. **Education**: Interactive glowing timeline showcasing Bachelor of Engineering in CSE (CGPA: 8.85/10.0) and Pre-University (PCMC: 94.0%).
-  6. **Certifications & Achievements**: Oracle/Coursera Java, GeeksforGeeks DSA, Michigan Python, Hackathon Finalist, and LeetCode 500+ milestones.
+  5. **Education**: Interactive glowing timeline showcasing Bachelor of Engineering in CSE (CGPA: 7.85/10.0) and Pre-University (PCMC: 70.0%).
+  6. **Certifications & Achievements**: Oracle/Coursera Java, GeeksforGeeks DSA, Michigan Python, Hackathon Finalist.
   7. **Contact**: Direct links to LinkedIn, GitHub, email with **one-click copy to clipboard**, and an interactive validated contact form.
 - **Downloadable Resume**:
   - Direct download button for `assets/Arun_Manjunath_Resume.pdf`.
